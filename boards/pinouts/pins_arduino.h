@@ -38,6 +38,8 @@
 #include "../lilygo-t-display-ttgo/pins_arduino.h"
 #elif MARAUDER_TOUCH
 #include "../marauder-touch/pins_arduino.h"
+#elif ESP32_WROOM_ILI9341
+#include "../esp32-wroom-ili9341/pins_arduino.h"
 #elif MARAUDER_MINI
 #include "../marauder-mini/pins_arduino.h"
 #elif LILYGO_T_HMI

@@ -34,8 +34,8 @@ if not isfile(join(FRAMEWORK_DIR,mcu, "lib", ".patched")):
         """Do nothing"""
     else:
         env.Execute(
-            "pio pkg exec -p toolchain-xtensa-%s -- xtensa-%s-elf-objcopy  --weaken-symbol=ieee80211_raw_frame_sanity_check %s %s"
-            % (mcu, mcu, original_file, patched_file)
+            "pio pkg exec -p toolchain-xtensa-esp-elf -- xtensa-%s-elf-objcopy  --weaken-symbol=ieee80211_raw_frame_sanity_check %s %s"
+            % (mcu, original_file, patched_file)
         )
 
     if isfile("%s.old" % (original_file)):
